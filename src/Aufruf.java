@@ -25,6 +25,22 @@ public class Aufruf
         {
             System.out.println(item.getTitle()+" hat " +item.getPages() +" Seiten und folgende ISBN: " +item.getIsbn());
         }
+
+        //Aufgabe 5
+
+        List<Paperbook> Bestellung=new ArrayList<>();
+        Bestellung.add(new Paperbook(200, released, "My Paperbook 1", "0", "April"));
+        Bestellung.add(new Paperbook(210, released, "My Paperbook 2", "0", "April"));
+        Bestellung.add(new Paperbook(240, released, "My Paperbook 3", "0", "January"));
+        Bestellung.add(new Paperbook(100, released, "My Paperbook 4", "0", "March"));
+        Bestellung.add(new Paperbook(140, released, "My Paperbook 5", "0", "October"));
+
+        for (Paperbook item:Bestellung)
+        {
+            System.out.println(item.getTitle()+" hat " +item.getPages() +" Seiten und folgende ISBN: " +item.getIsbn() +" zusätzlich ist es im Monat " +item.getMonth() +" erschienen.");
+        }
+
+
     }
 
 }
